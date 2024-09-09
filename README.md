@@ -24,5 +24,11 @@
 2. Open the `index.html` file in your browser.
 3. Explore the elegant wine selection experience.
 
+![image](https://github.com/user-attachments/assets/7db6a062-1f54-41bf-9f27-4f154af976a4)
+
+![image](https://github.com/user-attachments/assets/c75accfb-38b3-494e-9b80-95e0c5e89198)
+
+
+
 ---
 
