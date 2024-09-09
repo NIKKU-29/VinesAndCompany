@@ -1,0 +1,963 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+html body {
+    height: 2000vh;
+    width: 100%;
+
+
+}
+
+@font-face {
+    font-family: 'Neue Haas Display';
+    src: url('NeueHaasDisplayMediu.ttf') format('truetype');
+    font-weight: large;
+    font-style: italic;
+}
+
+#main {
+    /* background-color: black; */
+    position: relative;
+    z-index: 10;
+}
+
+
+
+#page1 {
+    min-height: 200vh;
+    width: 100%;
+    background-color: #fff5e6;
+    position: relative;
+}
+
+nav {
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between;
+
+
+}
+
+nav img {
+    height: 260px;
+    width: 370px;
+    z-index: 100;
+    position: relative;
+
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 120px;
+    margin-right: 40px;
+    gap: 1.5vw;
+
+
+}
+
+#nav-part2 h2 {
+    border: 4px solid #b6445b;
+    padding: 20px 20px;
+    border-radius: 40px;
+    font-weight: 100;
+    position: relative;
+    font-size: 30px;
+    overflow: hidden;
+}
+
+#nav-part2 h2::after {
+
+    content: "";
+    position: absolute;
+    height: 100%;
+    bottom: -100%;
+    width: 100%;
+
+    background-color: #FAAF14;
+    left: 0;
+    bottom: -100%;
+    border-radius: 10%;
+    transition: all ease 0.6s;
+
+}
+
+#nav-part2 h2:hover::after {
+    bottom: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h2 a {
+    font-family: "Neue Haas Display", serif;
+    text-decoration: none;
+    color: #FAAF14;
+    z-index: 9;
+    position: relative;
+}
+
+#nav-part2 h2:hover a {
+    color: #9C0826;
+    font-weight: 800;
+}
+
+nav h3 {
+    display: none;
+}
+
+
+#center {
+    height: 65vh;
+    width: 100%;
+    padding-left: 3vw;
+    padding-bottom: 4vw;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(131, 124, 124);
+}
+
+#left h3 {
+    width: 30vw;
+    color: #9C0826;
+    line-height: 2vw;
+    font-size: 1.8vw;
+
+}
+
+#right h1 {
+    font-size: 11vw;
+    margin-bottom: 1.2vw;
+    line-height: 8.5vw;
+    color: #9C0826;
+    text-align: right;
+    padding-right: 3vw;
+}
+
+/* Adjust the styles directly applied to the video element */
+
+video {
+    width: 98%;
+    /* Set the desired width */
+    height: 100vh;
+    /* Set the desired height */
+    margin-top: 2vw;
+    margin-left: 25px;
+    border-radius: 50px;
+    position: absolute;
+    overflow: hidden;
+    /* Ensure any overflow is hidden */
+    object-fit: cover;
+    /* Ensure the video covers the container while maintaining aspect ratio */
+}
+
+
+#hero-shape {
+    position: absolute;
+    width: 46vw;
+    height: 36vw;
+
+
+    right: 0;
+    top: 75vh;
+
+
+}
+
+#hero1 {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #cf4863, #ffbf3f);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(25px);
+    position: absolute;
+
+}
+
+#hero2 {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to right, #cf4863, #ffbf3f);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(25px);
+    animation-name: anime2;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+#hero3 {
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(to right, #cf4863, #ffbf3f);
+    border-radius: 50%;
+    position: absolute;
+    filter: blur(20px);
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime2 {
+    0% {
+        transform: translate(53%, -15%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(30%, -10%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(10%, 0%) rotate(-10deg);
+    }
+
+    75% {
+        transform: translate(-5%, 10%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(-10%, 5%) rotate(0deg);
+    }
+}
+
+@keyframes anime1 {
+    0% {
+        transform: translate(40%, -10%) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(30%, -5%) rotate(10deg);
+    }
+
+    50% {
+        transform: translate(20%, 0%) rotate(-10deg);
+    }
+
+    75% {
+        transform: translate(10%, -5%) rotate(10deg);
+    }
+
+    100% {
+        transform: translate(0%, 0%) rotate(0deg);
+    }
+}
+
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5vw;
+    background-color: #fff5e6;
+    position: relative;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+
+}
+
+#moving-text h1 {
+    color: transparent;
+    background: linear-gradient(to right, rgb(192, 30, 30),#931b33);
+    -webkit-background-clip: text;
+    font-size: 8vw;
+    display: inline-block;
+}
+
+#gola {
+    height: 3vw;
+    width: 3vw;
+    border-radius: 50%;
+    background-color: #ffab02;
+    display: inline-block;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2-bottom {
+
+    height: 110vh;
+    width: 100%;
+    padding: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 9;
+}
+
+#page2-bottom h1 {
+    font-family: "Neue Haas Display", serif;
+    font-size: 3.5vw;
+    width: 50%;
+    line-height: 3.6vw;
+
+}
+
+#bottom-part2 {
+    width: 30%;
+
+}
+
+#bottom-part2 img {
+    margin-left: 50px;
+    height: 70%;
+    width: 90%;
+    border-radius: 3%;
+}
+
+#bottom-part2 p {
+
+    margin-top: 50px;
+    margin-left: 62px;
+    margin-right: 40px;
+    padding: 5px;
+    font-size: 1.1vw;
+    width: 86%;
+    height: 200px;
+}
+
+#page2 #gui1 {
+    height: 30vw;
+    width: 30vw;
+    position: absolute;
+    background: linear-gradient(to right, #ffbf3f, #cf4863);
+    border-radius: 50%;
+    top: 30%;
+    left: 5%;
+    filter: blur(30px);
+    animation-name: vShapeAnimation;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes vShapeAnimation {
+
+    0%,
+    100% {
+        transform: translate(0, 0) skew(0);
+        /* Start and end at the same position */
+    }
+
+    25% {
+        transform: translate(50%, 50%) skew(10deg);
+        /* Move to the bottom-right corner */
+    }
+
+    50% {
+        transform: translate(100%, 0) skew(-10deg);
+        /* Move horizontally to the top-right corner */
+    }
+
+    75% {
+        transform: translate(50%, 50%) skew(10deg 10deg);
+        /* Move back to the bottom-right corner */
+    }
+}
+
+
+
+
+.page3 {
+    height: 128vh;
+    width: 100%;
+    background-color: #fff5e6;
+    padding-top: 4vw;
+
+}
+
+.elem {
+    height: 17.62vh;
+    width: 100%;
+    border-bottom: 1px solid rgb(173, 167, 167);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+
+}
+
+.elem h2 {
+    font-family: "Neue Haas Display";
+    font-weight: 30px;
+    font-size: 3.5vw;
+    position: relative;
+    z-index: 9;
+}
+
+.elem .overlay {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #ffbf3f, rgb(239, 93, 93), #931b33);
+    position: absolute;
+    left: 0;
+    top: -110%;
+    transition: all ease 0.35s;
+    filter: blur(5px);
+}
+
+.elem:hover .overlay {
+    top: 0;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    background-color: #fff5e6;
+    border-radius: 15px;
+    position: fixed;
+    z-index: 99;
+    left: 60%;
+    top: 30%;
+    display: none;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.page {
+    top: 0;
+    height: 160vh;
+    background-color: #fff5e6;
+    position: absolute;
+    width: 100%;
+    transition: opacity 1s ease-in-out;
+}
+
+.page.hidden {
+    top: 10;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#container {
+    padding-top: 10vw;
+    position: relative;
+    height: 160vh
+}
+
+.left4 {
+    position: absolute;
+    padding-right: 200px;
+    left: 40px;
+    height: 110vh;
+    width: 90%;
+    background-color: #373131;
+    border-radius: 10%;
+    margin-top: 300px;
+    z-index: 1;
+}
+
+.right4 {
+    position: absolute;
+    right: 40px;
+    height: 110vh;
+    width: 40%;
+    margin-top: 300px;
+    border-radius: 10%;
+    background-color: #000000;
+    z-index: 2;
+}
+
+.right4 img {
+    border-radius: 10%;
+    margin-right: 200px;
+    height: 110vh;
+    width: 100%;
+}
+
+.t1 {
+    height: 110vh;
+    width: 49vw;
+    padding: 15% 10%;
+}
+
+.t1 h1 {
+    font-size: 9vh;
+    color: white;
+    transition: 0.3s ease, -webkit-background-clip 0.3s ease, -webkit-text-fill-color 0.3s ease;
+}
+
+.t1 h3 {
+    font-family: "Neue Haas Display", serif;
+    margin-top: 90px;
+    font-size: 3vh;
+    color: white;
+}
+
+.t1 a {
+    margin-top: 80px;
+    color: white;
+    font-size: 2vw;
+    text-decoration: underline;
+}
+
+.t1 h1:hover,
+.t1 a:hover {
+    background: linear-gradient(to right, #E85802, #F59801);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#page6 {
+    top: 189vh;
+    height: 80vh;
+    width: 110%;
+    padding: 6vw 2vw;
+    background-color: #fff5e6;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    padding: 2vw;
+    /* background: #fff; */
+    border-left: 1px solid #7c7a7a;
+    width: 30%;
+}
+
+
+
+
+#page7 { 
+    height: 90vh;
+    width: 100%;
+    z-index: 1; /* Ensure it's beneath other content */
+    position: relative; /* Ensure stacking context */
+}
+
+#footer {
+    position: absolute;
+    background-color: #9C0826;
+    color: white;
+    z-index: 2; /* Ensure it appears above #page7 */
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#footer h1 {
+    font-size: 16vw; /* Adjust based on screen size */
+    right: 0;
+    border-bottom: 1px solid white;
+}
+
+.subscribe-button {
+    display: inline-block;
+    padding: 1vw 2vw;
+    font-size: 1.5vw;
+    color: #ffffff;
+    background-color: transparent;
+    border: 5px solid #ffffff;
+    border-radius: 2vw;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.subscribe-button:hover {
+
+    border: 3px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#footer-end {
+    font-size: 3vh;
+    height: 10vh;
+    width: 100%;
+    z-index: 200;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    animation: fadeInUp 1s ease-out; /* Apply the animation */
+}
+.footer-div {
+
+    justify-content: center;
+    flex: 1;
+    max-width: 50%;
+    padding-right: 1vw;
+    margin-bottom: 800px;
+}
+
+
+
+#footer-end.animate {
+    animation: fadeInUp 5s ease-out; /* Apply the animation when the class is added */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Starts slightly below */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends at the original position */
+    }
+}
+
+
+#footer-end h3 {
+    border-top: 1px solid white;
+}
+
+#name, #linked, #git {
+    padding: 10px;
+}
+
+#git a, #name a, #linked a,#twitter a {
+    z-index: 29000; /* Ensure links are on top */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#git a:hover, #name a:hover, #linked a:hover,#twitter a:hover{
+   
+   color:white; /* Underline on hover for better UX */
+   text-decoration: underline solid;
+}
+
+
+#full-scr {
+    height: 100vh;
+    width: 100%;
+    background-color: #00000070;
+    position: fixed;
+    z-index: 99;
+    top: -100%;
+    transition: all ease 0.5s;
+}
+
+#full-div1 {
+    height: 50%;
+    width: 100%;
+    background-color: #fff5e6;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+
+
+
+.swiper-slide p {
+    margin-top: 1vw;
+    padding-left: 30px;
+    font-family: "Neue Haas Display", serif;
+    font-size: 1.3vw;
+    font-weight: 20px;
+}
+
+
+@media (max-width:600px) {
+
+    #page1 {
+        min-height: 100vh;
+        width: 100vw;
+        padding: 0 0vw;
+    }
+
+    nav {
+        padding: 8vw 5vw;
+        background-color: #fff5e6;
+        /* padding: 0 5vw; */
+    }
+
+    nav img {
+        transition: all ease 0.2s;
+        height: 9vh;
+        width: 13vh;
+    }
+
+    #nav-part2 {
+        display: none;
+    }
+
+    nav h3 {
+        display: block;
+        padding: 3vw 5vw;
+        border: 1px solid #ababab;
+        border-radius: 50px;
+        font-size: 4vw;
+        font-weight: 200;
+        padding-left: 10vw;
+    }
+
+    #center {
+        height: 62vh;
+        width: 100%;
+        /* background-color: orange; */
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        border-bottom: 1px solid #0000003c;
+        padding: 7vw 5vw;
+        padding-bottom: 10vw;
+        flex-direction: column-reverse;
+        position: relative;
+        z-index: 9;
+    }
+
+    #left h3 {
+        width: 80%;
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+    
+.t1 {
+    height: 50vh;
+    width: 38vw;
+    padding: 15% 10%;
+}
+
+
+    #center h1 {
+        font-size: 17vw;
+        text-align: right;
+        line-height: 15vw;
+    }
+
+    #page1 video {
+        position: relative;
+        border-radius: 15px;
+        margin-top: 4vw;
+        height: 70vh;
+        object-fit: cover;
+        object-position: center;
+        
+        width: 92%;
+        margin-left: 4%;
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        background-color: #fff5e6;
+        padding: 8vw 0;
+        position: relative;
+    }
+
+    #moving-text {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    #moving-text::-webkit-scrollbar {
+        display: none;
+    }
+
+    .con {
+        white-space: nowrap;
+        display: inline-block;
+        animation-name: move;
+        animation-duration: 10s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    #moving-text h1 {
+        font-size: 15vw;
+        /* background-color: lightblue; */
+        display: inline-block;
+    }
+
+    #gola {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: #FE320A;
+        margin: 2vw 2vw;
+    }
+
+    #page2-bottom {
+        height: 130vh;
+        width: 100%;
+        /* background-color: aliceblue; */
+        padding: 10vw 4vw;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+        z-index: 9;
+    }
+
+    #page2-bottom h1 {
+        font-size: 8.2vw;
+        width: 100%;
+        line-height: 9vw;
+    }
+
+    #bottom-part2 {
+        width: 70%;
+        /* background-color: aqua; */
+    }
+
+    #bottom-part2 img {
+        width: 100%;
+        height: 20v;
+        border-radius: 10px;
+    }
+
+    #bottom-part2 p {
+        font-weight: 200;
+        margin-top: 2vw;
+        font-size: 3vw;
+    }
+
+    .swiper-slide p {
+        font-size: 3vw;
+    }
+
+    #page2 #gooey {
+        height: 62vw;
+        width: 62vw;
+        position: absolute;
+        border-radius: 50%;
+        background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+        /* background: linear-gradient(to top right,red,blue); */
+
+
+        top: 58%;
+        left: 25%;
+        filter: blur(20px);
+        animation-name: gooey;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+
+
+        #footer {
+            position: fixed;
+            background-color: #9C0826;
+            color: white;
+            z-index: 9;
+            bottom: 0;
+            height: 100vh;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-direction: column;
+            
+        }
+
+    }
+
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1 {
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right, #ffbf3f, rgb(239, 93, 93), #931b33);
+    -webkit-background-clip: text;
+    position: absolute;
+    justify-content: center;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+
+#loader h1:nth-child(2) {
+    animation-delay: 2s;
+}
+
+#loader h1:nth-child(3) {
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1 {
+        font-size: 9vw;
+        justify-content: center;
+
+    }
+}
