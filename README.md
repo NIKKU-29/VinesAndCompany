@@ -1,7 +1,7 @@
-# Wines & Co.
+# Vines & Co.
 
 ### Overview:
-**Wines & Co.** is a modern e-commerce platform designed to offer users a seamless experience when browsing and selecting wines. The site features an elegant design, intuitive navigation, and smooth transitions that ensure a delightful user journey.
+**Vines & Co.** is a modern e-commerce platform designed to offer users a seamless experience when browsing and selecting wines. The site features an elegant design, intuitive navigation, and smooth transitions that ensure a delightful user journey.
 
 ### Features:
 - **Visual Appeal:**
