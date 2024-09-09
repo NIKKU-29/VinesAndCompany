@@ -1,7 +1,3 @@
-### About :
-
-**Wines & Co.** is a visually appealing e-commerce platform designed to showcase a wide selection of wines. The website offers a streamlined user experience with intuitive navigation and interactive elements, resulting in increased user engagement. Advanced JavaScript libraries enhance functionality while maintaining aesthetic appeal and performance.
-
 ---
 
 # Wines & Co.
