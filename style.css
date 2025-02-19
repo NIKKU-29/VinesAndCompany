@@ -1065,6 +1065,7 @@ video {
         width: 150%;
         padding: 6vw 2vw;
         background-color: #fff5e6;
+        overflow-x:hidden;
       }
      
 }
